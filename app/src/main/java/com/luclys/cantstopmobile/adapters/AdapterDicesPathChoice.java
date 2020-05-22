@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.Toast;
+import android.widget.ImageView;
 
 import com.client.plple.plple.commun.constantes.NET;
 import com.luclys.cantstopmobile.Client;
@@ -77,6 +78,19 @@ public class AdapterDicesPathChoice extends BaseAdapter {
 
         final Button btn1 = view.findViewById((R.id.btnPathChoice));
         final Button btn2 = view.findViewById(R.id.btnPathChoice2);
+        final ImageView dice1 = view.findViewById(R.id.imgDice1);
+        final ImageView dice2 = view.findViewById(R.id.imgDice2);
+        final ImageView dice3 = view.findViewById(R.id.imgDice3);
+        final ImageView dice4 = view.findViewById(R.id.imgDice4);
+
+
+        ArrayList<Integer> arrayDiceRes = new ArrayList<>();
+        arrayDiceRes.add(R.drawable.ic_dice_1);
+        arrayDiceRes.add(R.drawable.ic_dice_2);
+        arrayDiceRes.add(R.drawable.ic_dice_3);
+        arrayDiceRes.add(R.drawable.ic_dice_4);
+        arrayDiceRes.add(R.drawable.ic_dice_5);
+        arrayDiceRes.add(R.drawable.ic_dice_6);
 
         final int sumDices1;
         final int sumDices2;
@@ -86,14 +100,26 @@ public class AdapterDicesPathChoice extends BaseAdapter {
             case 0:
                 sumDices1 = listDiceRoll.get(0) + listDiceRoll.get(1);
                 sumDices2 = listDiceRoll.get(2) + listDiceRoll.get(3);
+                dice1.setImageResource(arrayDiceRes.get(listDiceRoll.get(0)-1));
+                dice2.setImageResource(arrayDiceRes.get(listDiceRoll.get(1)-1));
+                dice3.setImageResource(arrayDiceRes.get(listDiceRoll.get(2)-1));
+                dice4.setImageResource(arrayDiceRes.get(listDiceRoll.get(3)-1));
                 break;
             case 1:
                 sumDices1 = listDiceRoll.get(3) + listDiceRoll.get(1);
                 sumDices2 = listDiceRoll.get(0) + listDiceRoll.get(2);
+                dice1.setImageResource(arrayDiceRes.get(listDiceRoll.get(3)-1));
+                dice2.setImageResource(arrayDiceRes.get(listDiceRoll.get(1)-1));
+                dice3.setImageResource(arrayDiceRes.get(listDiceRoll.get(0)-1));
+                dice4.setImageResource(arrayDiceRes.get(listDiceRoll.get(2)-1));
                 break;
             case 2:
                 sumDices1 = listDiceRoll.get(2) + listDiceRoll.get(1);
                 sumDices2 = listDiceRoll.get(0) + listDiceRoll.get(3);
+                dice1.setImageResource(arrayDiceRes.get(listDiceRoll.get(2)-1));
+                dice2.setImageResource(arrayDiceRes.get(listDiceRoll.get(1)-1));
+                dice3.setImageResource(arrayDiceRes.get(listDiceRoll.get(0)-1));
+                dice4.setImageResource(arrayDiceRes.get(listDiceRoll.get(3)-1));
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + i);

@@ -1,0 +1,13 @@
+<!--Dice icon by Alexandru Stoica https://iconscout.com/icons/dice -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+  <path
+      android:pathData="M9,7.105a2,2 0,1 1,-4 0,2 2,0 0,1 4,0zM9,13.105a2,2 0,1 1,-4 0,2 2,0 0,1 4,0zM15,7.105a2,2 0,1 1,-4 0,2 2,0 0,1 4,0zM15,13.105a2,2 0,1 1,-4 0,2 2,0 0,1 4,0zM18,17a1,1 0,0 1,-1 1h-14a1,1 0,0 1,-1 -1v-14a1,1 0,0 1,1 -1h14a1,1 0,0 1,1 1v14zM18,0h-16a2,2 0,0 0,-2 2v16a2,2 0,0 0,2 2h16a2,2 0,0 0,2 -2v-16a2,2 0,0 0,-2 -2z"
+      android:strokeWidth="1"
+      android:fillColor="#000"
+      android:fillType="evenOdd"
+      android:strokeColor="#00000000"/>
+</vector>

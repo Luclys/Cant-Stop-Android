@@ -9,20 +9,41 @@
         android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:gravity="center"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnPathChoice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imgDice1"
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:background="#FFFFFF"
             android:cropToPadding="true"
-            app:srcCompat="@drawable/board" />
+            app:srcCompat="@drawable/ic_dice_1" />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgDice2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/ic_dice_2" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
         <TextView
             android:id="@+id/textPlus"
@@ -30,16 +51,33 @@
             android:layout_height="wrap_content"
             android:text="+"
             android:textColor="#000000"
-            android:textSize="36sp" />
+            android:textSize="40sp" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
         <ImageView
-            android:id="@+id/imgDice2"
-            android:layout_width="wrap_content"
+            android:id="@+id/imgDice3"
+            android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_weight="1"
             android:cropToPadding="true"
-            android:visibility="visible"
-            app:srcCompat="@drawable/board" />
+            app:srcCompat="@drawable/ic_dice_3" />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgDice4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/ic_dice_4" />
 
     </LinearLayout>
 
