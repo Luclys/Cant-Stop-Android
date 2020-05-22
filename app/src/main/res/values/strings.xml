@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Can\'t Stop Mobile</string>
+
+    <!-- Board Game -->
+    <string name="continuer">Continuer</string>
+    <string name="stopper">Stopper</string>
+    <string name="and" translatable="false"><![CDATA[&]]></string>
+
+    <string name="progressBothChoice">Progresser sur %d et %d</string>
+    <string name="progressOneChoice">Progresser sur %d</string>
+    <string name="unavailableChoice">Choix impossible</string>
+    <string name="progressImpossible">Vous ne pouvez plus progresser et perdez les avancées de votre tour !</string>
+</resources>

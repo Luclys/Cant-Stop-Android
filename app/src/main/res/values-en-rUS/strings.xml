@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Can\'t Stop Mobile</string>
+
+    <!-- Board Game -->
+    <string name="continuer">Continue</string>
+    <string name="stopper">Stop</string>
+
+    <string name="progressBothChoice">Progress on %d and %d</string>
+    <string name="progressOneChoice">Progress on %d</string>
+    <string name="unavailableChoice">Unavailable Choice</string>
+    <string name="progressImpossible">You can\'t progress any further, you loose your progress for this turn !</string>
+
+</resources>
