@@ -6,8 +6,8 @@
     <string name="stopper">Stopper</string>
     <string name="and" translatable="false"><![CDATA[&]]></string>
 
-    <string name="progressBothChoice">Progresser sur %d et %d</string>
-    <string name="progressOneChoice">Progresser sur %d</string>
+    <string name="progressBothChoice">Progresser sur %1$d et %2$d</string>
+    <string name="progressOneChoice">Progresser sur %1$d</string>
     <string name="unavailableChoice">Choix impossible</string>
     <string name="progressImpossible">Vous ne pouvez plus progresser et perdez les avancées de votre tour !</string>
 </resources>

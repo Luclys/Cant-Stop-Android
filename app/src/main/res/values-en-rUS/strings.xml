@@ -6,8 +6,8 @@
     <string name="continuer">Continue</string>
     <string name="stopper">Stop</string>
 
-    <string name="progressBothChoice">Progress on %d and %d</string>
-    <string name="progressOneChoice">Progress on %d</string>
+    <string name="progressBothChoice">Progress on %1$d and %2$d</string>
+    <string name="progressOneChoice">Progress on %1$d</string>
     <string name="unavailableChoice">Unavailable Choice</string>
     <string name="progressImpossible">You can\'t progress any further, you loose your progress for this turn !</string>
 

@@ -30,6 +30,7 @@ public class AdapterDicesPathChoice extends BaseAdapter {
     /**
      * @param context      : Contexte de l'application
      * @param listDiceRoll : Liste des valeurs des dès tirés
+     * @param climberPos : Liste des positions des alpinistes
      */
     public AdapterDicesPathChoice(Context context, ArrayList<Integer> listDiceRoll, ArrayList<Integer> climberPos) {
         this.listDiceRoll = listDiceRoll;
@@ -132,7 +133,7 @@ public class AdapterDicesPathChoice extends BaseAdapter {
             if (nbFreeClimbers == 0) { // One path available : the one who is True.
                 final int trueSum = a1 ? sumDices1 : sumDices2;
 
-                btn1.setText(String.format("Progresser sur %", trueSum));
+                btn1.setText(context.getString(R.string.progressOneChoice, trueSum));
                 btn1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -140,7 +141,7 @@ public class AdapterDicesPathChoice extends BaseAdapter {
                     }
                 });
             } else { // Both path available
-                btn1.setText(String.format("Progresser sur %d et %d", sumDices1, sumDices2));
+                btn1.setText(context.getString(R.string.progressBothChoice, sumDices1, sumDices2));
                 btn1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -158,8 +159,8 @@ public class AdapterDicesPathChoice extends BaseAdapter {
             } else { // 2 paths available : choose 1
                 btn2.setVisibility(View.VISIBLE);
 
-                btn1.setText(String.format("Progresser sur %d", sumDices1));
-                btn2.setText(String.format("Progresser sur %d", sumDices2));
+                btn1.setText(context.getString(R.string.progressOneChoice, sumDices1));
+                btn2.setText(context.getString(R.string.progressOneChoice, sumDices2));
 
                 btn1.setOnClickListener(new View.OnClickListener() {
                     @Override
